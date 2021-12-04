@@ -129,12 +129,8 @@ public class Main {
 
                     final List<Integer> l = e.getValue();
 
-                    try {
-                        if (list.get(i) == other) {
-                            l.remove(i);
-                        }
-                    } catch (final Exception exception) {
-                        exception.printStackTrace();
+                    if (list.get(i) == other) {
+                        l.remove(i);
                     }
                 }
             }
