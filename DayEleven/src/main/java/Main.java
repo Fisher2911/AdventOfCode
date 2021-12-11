@@ -103,15 +103,11 @@ public class Main {
 
         octopi[row][column] = 0;
 
-        flash(row, column + 1, flashed);
-        flash(row, column - 1, flashed);
-        flash(row + 1, column + 1, flashed);
-        flash(row + 1, column - 1, flashed);
-        flash(row + 1, column, flashed);
-        flash(row - 1, column, flashed);
-        flash(row - 1, column - 1, flashed);
-        flash(row - 1, column + 1, flashed);
-
+        for (int i = -1; i <= 1; i++) {
+            for (int j = -1; j <= 1; j++) {
+                flash(row + i, column + j, flashed);
+            }
+        }
         return flashed;
     }
 
