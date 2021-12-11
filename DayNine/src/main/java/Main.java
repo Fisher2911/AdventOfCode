@@ -120,7 +120,6 @@ public class Main {
         }
     }
 
-    // returns previous
     private static void recursiveBasin(final int row,
                                        final int column,
                                        final Set<Pair> checked,
